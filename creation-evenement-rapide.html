@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LYL | Event</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+		
+		<!-- Bootstrap -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+		<!-- Test mise en place Lesscss -->
+		<link rel="stylesheet/less" type="text/css" href="assets/css/bootswatch.less">
+		<link rel="stylesheet/less" type="text/css" href="assets/css/variables.less">
+		<!-- custom css -->
+        <link href="assets/css/docs.css" rel="stylesheet">				
+		<link href="assets/css/main.css" rel="stylesheet">
+
+		<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+		<link href="assets/nivo/nivo-slider.css" type="text/css" media="screen" rel="stylesheet">
+		<link href="assets/css/prettyPhoto.css" type="text/css" media="screen" rel="stylesheet">
+		
+		<!-- mise en place Lesscss.js a mettre en dessous des feuilles de style -->	
+		<script src="less.js" type="text/javascript"></script>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="assets/js/main.js"></script>		
+        
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!--[if lte IE 8]>
+    	<link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
+		<![endif]-->
+        
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="assets/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+        
+    </head>
+<body>
+<div class="topspace"></div>
+
+
+<div class="container-fluid container-small">
+
+<h4> Création rapide d'un évènement</h4>
+<hr>
+
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="row">
+			<!-- COLONNE GAUCHE -->
+				<div class="span6">
+					<!-- Titre + description -->
+					<div class="post space">
+						<input class="input-block-level" type="text" placeholder="Titre" required="">
+						<input class="input-block-level" type="text" placeholder="Description (facultatif)">
+					</div>
+					<div class="post space">
+						<!-- Saisie heure + sondage -->
+							<ul class="nav nav-pills">
+								<li class="active"><a href="#heure-date" data-toggle="tab">Saisie de l'heure et de la date</a></li>
+								<li><a href="#heure-date-sondage" data-toggle="tab">Proposer plusieurs dates</a></li>
+							</ul>
+						<hr>
+						<div class="tab-content">
+							<div class="tab-pane active" id="heure-date">
+								<div class="controls controls-row">
+									<input id="bref" name="bref" type="text" placeholder="Date" class="span4" required="">
+									<input id="bref" name="bref" type="text" placeholder="Heure" class="span2" required="">
+									 + Ajouter une heure de fin
+								</div>
+							</div>
+							<div class="tab-pane" id="heure-date-sondage">
+							<p>Proposer plusieurs heures</p>
+							</div>
+						</div>
+					</div>
+					<div class="post space">
+						<!-- Saisie du Lieu -->
+						<ul class="nav nav-pills">
+							<li class="active"><a href="#lieu" data-toggle="tab">Saisie le lieu</a></li>
+							<li><a href="#lieu-sondage" data-toggle="tab">Proposer plusieurs lieux</a></li>
+						</ul>
+						<hr>
+						<div class="tab-content">
+							<div class="tab-pane active" id="lieu">
+								<div class="controls controls-row">
+									<input class="input-block-level" type="text" placeholder="Lieu (facultatif)">
+									
+								</div>
+							</div>
+							<div class="tab-pane" id="lieu-sondage">				
+								<p>Saisissez plusieurs lieux</p>
+								<div class="controls controls-row">
+									<input class="input-block-level" type="text" placeholder="Lieu 1">
+									<hr>
+								</div>
+								<div class="controls controls-row">
+									<input class="input-block-level" type="text" placeholder="Lieu 1">
+								</div>
+							<hr>
+							</div>												
+						</div>
+					</div>
+				</div>
+				<!-- COLONNE Droite -->
+				<div class="span6">
+					<div class="post">
+						<img src="assets/img/1.jpg" style="width:100%" alt="evenement"></img>
+						
+						<div class="btn-group btn-group-justified" data-toggle="buttons-radio">
+							<button type="button" class="btn btn-primary"><i class="icon-chevron-left"></i></button>
+							<button class="btn btn-primary" data-toggle="modal" href="#modif-theme" ><i class="icon-edit"></i>  Modifier le theme</button>
+							<button type="button" class="btn btn-primary"><i class="icon-chevron-right"></i></button>
+						</div>
+					</div>
+					<div class="post space">
+						<!-- Invitation-->
+							<button class="btn btn-large btn-block btn-primary" data-toggle="modal" href="#invitation" type="button">Inviter des amis</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+		<!-- Debut fonctionnalité modification photo evenement-->
+		<div class="modal-event-modif hide" id="modif-theme">
+			<div class="modal-close"> <a class="btn btn-info" data-dismiss="modal">X</a></div>	
+			<div class="modal-event-body">
+				<div class="row-fluid post">
+				<h4>Selectionner une photo</h4>
+				<hr>
+					<div class="row-fluid">
+						<div class="span12">
+							<!-- columns menu selection de photos -->	
+							<div class="tabbable tabs-left">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#l" data-toggle="tab">Concerts</a></li>
+									<li class=""><a href="#2" data-toggle="tab">Soirée entre amis</a></li>
+									<li class=""><a href="#3" data-toggle="tab">Sport</a></li>
+									<li class=""><a href="#4" data-toggle="tab">voyage</a></li>
+									<li class=""><a href="#5" data-toggle="tab">Autre</a></li>
+									<li class=""><a href="#6" data-toggle="tab">Vos photos</a></li>
+									<hr>
+									<li class=""><a href="#7" data-toggle="tab">Importer</a></li>
+								</ul>
+								<div data-spy="scroll" data-target="#tab" data-offset="50" class="scrollspy">
+									<div class="tab-content" style="max-height:600px;">
+										<div class="tab-pane active" id="l">
+											<img src="assets/img/3.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="assets/img/2.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="assets/img/3.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="assets/img/2.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="2">
+											<img src="assets/img/1.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="assets/img/4.jpg" style="width:60%;" alt="evenement">													
+										</div>
+										<div class="tab-pane" id="3">
+											<img src="assets/img/3.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="4">
+											<img src="assets/img/1.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="5">
+											<img src="assets/img/2.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="6">
+											<img src="assets/img/4.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="7">
+											<form class="form-horizontal">
+												<!-- File Button --> 
+												<div class="control-group">
+												  <div class="controls">
+													<input id="upload-photo" name="upload-photo" class="input-file" type="file">
+												  </div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<button class="btn btn-success pull-right" type="button">Valider</button>
+							<button class="btn pull-right" type="button" data-dismiss="modal">Annuler</button>
+						</div>
+					</div>	
+				</div>			
+			</div>			
+		</div>
+<!-- fin fonctionnalité modification photo evenement-->
+
+
+<!-- Debut modal invitation -->
+		<div class="modal-event-modif hide" id="invitation">
+			<div class="modal-close"> <a class="btn btn-info" data-dismiss="modal">X</a></div>	
+			<div class="modal-event-body">
+				<div class="row-fluid post">
+				<h4>Inviter des amis</h4>
+				<hr>
+					<div class="row-fluid">
+						<div class="span12">
+							<!-- columns menu selection de photos -->	
+							<div class="tabbable tabs-left">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#l" data-toggle="tab">Mes amis</a></li>
+									<li class=""><a href="#2" data-toggle="tab">Via mes réseaux </a></li>
+									<li class=""><a href="#3" data-toggle="tab">Par mail</a></li>
+								</ul>
+								<div data-spy="scroll" data-target="#tab" data-offset="50" class="scrollspy">
+									<div class="tab-content" style="max-height:600px;">
+										<div class="tab-pane active" id="l">
+											<div class="row-fluid">
+												<div class="span3 post">
+													<img src="assets/img/user1.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												<div class="span3 post">
+													<img src="assets/img/user2.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												<div class="span3 post">
+													<img src="assets/img/user13.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												
+											</div>
+											<div class="row-fluid">
+												<div class="span3 post">
+													<img src="assets/img/user3.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												<div class="span3 post">
+													<img src="assets/img/user1.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												<div class="span3 post">
+													<img src="assets/img/user2.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span3 post">
+													<img src="assets/img/user13.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												<div class="span3 post">
+													<img src="assets/img/user3.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="2">
+											<img src="assets/img/1.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="assets/img/4.jpg" style="width:60%;" alt="evenement">													
+										</div>
+										<div class="tab-pane" id="3">
+											<img src="assets/img/3.jpg" style="width:60%;" alt="evenement">
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<button class="btn btn-success pull-right" type="button">Valider</button>
+							<button class="btn pull-right" type="button" data-dismiss="modal">Annuler</button>
+						</div>
+					</div>	
+				</div>			
+			</div>			
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<br>
+	<br>
+	<br>
+</div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+		    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/superfish-menu/superfish.js"></script>
+    <script src="assets/js/jquery.nivo.slider.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/twitter.js"></script>
+	<script src="assets/js/jquery.waitforimages.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/testimonialrotator.js"></script>
+    <script src="assets/js/slides.min.jquery.js"></script>
+    <script src="assets/js/jquery.preloader.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="assets/js/jquery.gmap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/contact.js"></script>
+ </body>
+</html>

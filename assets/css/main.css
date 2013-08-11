@@ -1,0 +1,568 @@
+﻿
+
+/*espace entre menu global et le contenu */
+.topspace {	margin-top: 120px;
+}
+
+.topspace-small {
+	margin-top: 90px;
+}
+
+body {	background-color: #E5E3DF;	color: #5F5F5F;
+}
+
+/*************************************************/
+/***    ACCUEIL - Bloc RECHERCHE MEnu du Haut  ******/
+/*************************************************/
+ #barre_rechercher
+ {
+	position:absolute;
+	left:32%;
+	margin-top:0.4%;
+}
+
+#rec
+{
+	height:4%;
+}
+
+#rec1
+{
+	margin-top:0;
+}
+
+
+
+
+
+
+/*************************************************/
+/*  ACCUEIL - BLOC passé Right Now A venir  ********/
+/*************************************************/
+
+#blocevent
+{
+	font-size:0.2em;
+}
+
+#blocrecherche
+{
+border: 1px solid #D0D5D9;
+padding:3%;
+border-radius:2%;
+}
+
+#blocrecherche input, span 
+{
+	margin:2%;
+}
+
+
+
+/*************************************************/
+/*********     ACCUEIL - CATEGORIES       ********/
+/*************************************************/
+.cat {
+	border-bottom: 3px solid #80AEE9;
+	border-top: 1px solid #D0D5D9;
+	border-left: 2px solid #D0D5D9;
+	border-right: 1px solid #D0D5D9;
+	height: 80px;
+	background-color: #E5E3DF;
+	color: #444;
+	font-size: 0.85em;
+	font-weight:bold;
+	text-align: center;
+	padding-top: 20px;
+	overflow:hidden;
+	margin-bottom:2.65%;
+}
+
+/*couleur survole catꨯrie*/
+.cat:hover {
+	background-color: #80AEE9;
+}
+
+/*main a la place de la souris sur catꨯrie*/
+.cat:hover {
+	cursor: pointer;
+}
+
+
+.cat i {
+	display: block;
+	margin: auto;
+}
+
+/*
+.catego {
+	background-color: #E5E3DF;
+	margin-bottom: 30px;
+}
+
+.catego p {
+	margin-left: 20px;
+}
+*/
+
+.catego h1, .catego h2, .catego h3, .catego  h4, .catego h5, .catego h6 {
+	line-height: 20px;
+	margin-left: 15px;}
+	
+/*************************************************/
+/***    ACCUEIL - Bloc evenement  ******/
+/*************************************************/
+
+#infovent
+{
+
+
+}
+
+#icons-info-event img{
+	width:10%;
+	
+	}
+
+#icons-info-event {
+	list-style:none;
+	border:1px solid black;
+	text-align:center;
+	position:absolute;
+	top:27%;
+	left:48%;
+	z-index:10;
+	background-color: black;
+	opacity:0.65;
+	
+	}
+
+
+#icons-info-event li {
+
+	border:1px solid white;
+	opacity:0.5;
+	height:20%;
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************/
+/***    ACCUEIL - Bloc recherche evenement  ******/
+/*************************************************/
+#accordion2
+{
+
+
+
+}
+.accordion-group
+{
+display:inline-block;
+
+}
+
+#accordion2 a
+{
+ background-color:#777675;
+ color:#fff;
+ text-align:center;
+ font-size:1.1em;
+ font-weight:bold;
+}
+
+.accordion-inner
+{
+overflow: visible;
+}
+
+
+
+
+
+/*************************************************/
+/***    ACCUEIL - Bloc Info Evenement  ******/
+/*************************************************/
+
+/*************************************************/
+
+
+/*reglage sur bar de recherche */
+.navbar-search .search-query {
+	line-height: 1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/*reglage sur brand */
+.navbar .brand {
+	padding: 14px 20px 15px;
+	margin-left: 0px;
+}
+
+
+/*reglage sur sub nav*/
+div.subnav {
+	background-color: white;
+	background-image: none;
+	-moz-box-shadow:0px 1px 2px 0px rgba(119, 119, 119, 0.67);
+	-webkit-box-shadow:0px 1px 2px 0px rgba(119, 119, 119, 0.67);
+	box-shadow:0px 1px 2px 0px rgba(119, 119, 119, 0.67);
+}
+
+
+/*reglage taille container*/
+.container-fluid {
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-fluid  .span12{
+	min-width: 331px;
+}
+
+.container-small {
+	max-width: 837px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.container-small .span12  {
+	min-width: 331px;
+}
+
+
+/*reglage menu sub nav*/
+.subnav {
+	background-color: #FFF;
+	background-image: none;
+	-moz-box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+	-webkit-box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+	box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+}
+
+
+.scrollspy-example {
+	height: 90%;
+	width: 60%;
+	overflow: auto;
+	position: relative;
+}
+
+.lien_reseaux {
+	list-style:none;
+	
+}
+
+.lien_reseaux ul{
+	list-style:none;
+	display: inline-block;
+	
+}
+
+.lien_reseaux li {
+	list-style:none;
+	display: inline-block;
+}
+
+
+
+
+/*Page Inscription&Connexion*/
+#connexion
+{
+position: absolute;
+left:40%;
+top:5%;
+	
+}
+
+#connex
+{
+border: 1px solid #5F5F5F;
+padding:3%;
+border-radius:2%;
+}
+
+#inscr
+{
+border: 1px solid #5F5F5F;
+padding:3%;
+border-radius:2%;
+}
+
+/*Page Inscription Formulaire _ class="modalf"*/
+
+.modalf
+{
+	background: #fff;
+	border: 1px solid #5F5F5F;
+	border-radius:2%;
+	padding:2%;
+}
+
+/*************************************************/
+/*************    BLOC FOOTER         ***********/
+/*************************************************/
+
+/*FOOTER générales */
+
+footer ul
+{
+	text-align: center;
+}
+
+footer li
+{
+	display:inline-block;
+	list-style:none;
+	padding: 1%;
+
+}
+
+
+/*************************************************/
+/*************************************************/
+/*************************************************/
+/*************************************************/
+/*************************************************/
+/*************************************************/
+/*************************************************/
+/*************************************************/
+
+
+
+/*************************************************/
+/*************    FORMAT EVENEMENT       *********/
+/*************************************************/
+
+.event {
+	background-color: #fff;
+	font-size: 11px;
+	text-align : justify;
+	line-height: 20px;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.055);
+    transition: all 0.2s ease-in-out 0s;
+    display: block;
+	margin-bottom: 30px;
+	-moz-box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+	-webkit-box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+	box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+}
+
+.event-body {
+	padding: 0px 8px 8px 8px;
+}
+
+.event img {
+	width:100%;
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
+	cursor: zoom-in;
+    border-radius: 4px 4px 0px 0px;	
+}
+
+.event h1, .event h2, .event h3, .event h4, .event h5, .event h6 {
+	display: block;
+	-webkit-margin-before: 0.2em;
+	-webkit-margin-after: 0.3em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+
+.event p {
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.event-big {
+    border-radius: 4px 4px 4px 4px;
+	background-color: #fff;
+	font-size: 11px;
+	text-align : justify;
+	line-height: 20px;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.055);
+    transition: all 0.2s ease-in-out 0s;
+    display: block;
+	margin-bottom: 30px;
+	-moz-box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+	-webkit-box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+	box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+}
+
+.event-big img {
+    border-radius: 4px 4px 4px 4px;
+	width:100%;
+}
+
+
+
+/*************************************************/
+/*************    HOVERLAY EVENEMENT        ******/
+/*************************************************/
+
+.modal-event {
+	position: absolute;
+	z-index: 1050;
+	overflow-y: auto;
+	max-width: 1100px;
+	top: 5%;
+}
+
+.modal-close {
+	position: fixed;
+	top: 5%;
+	right: 5%;
+}
+
+/* modal event modif*/
+.modal-event-modif {
+position: fixed;
+top: 10%;
+left: 50%;
+z-index: 1050;
+margin-left: -280px;
+}
+
+/*************************************************/
+/*************    BTN HOVER IMAGE       *********/
+/*************************************************/
+
+/* over image */
+
+.flex-caption {
+	position: absolute;
+	padding: 5px 10px;
+	margin: 0;
+	font-size: 14px;
+	line-height: 24px;
+	color: #EAEAEA;
+	text-align: left;
+	max-width: 30%;
+}
+
+/* Test Bouton hover img*/
+
+.btn-inverse{
+color: #222;
+background-color: rgba(223, 223, 223, 0.46);
+}
+
+
+
+
+/*************************************************/
+/*************    FORMAT POST      ***********/
+/*************************************************/
+
+.post {
+	background-color: #fff;
+	margin-bottom: 30px;
+	-moz-box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+	-webkit-box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+	box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+}
+
+.post-body {
+	padding: 0px 8px 8px 8px;
+}
+
+.post-body  .pull-right{
+	margin-bottom: 8px;
+}
+
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+	line-height: 20px;
+	margin: 8px 8px 8px 8px;
+}
+
+.post img {
+	width: 100%;
+}
+
+
+/*************************************************/
+/*************    FORMAT HR      ***********/
+/*************************************************/
+
+.hr-small {
+margin: 15px 0;
+position: abolute;
+border: 0;
+border-top: 1px solid #ECF0F1;
+border-bottom: 1px solid white;
+}
+
+/*************************************************/
+/*************    OVER BIG POST      ***********/
+/*************************************************/
+
+.post-flex-caption {
+	position: absolute;
+	width:200px;
+	padding: 10px 20px;
+	margin: 0;
+	background: #1D1D1D;
+	background: rgba(0, 0, 0, .7);
+	font-size: 14px;
+	line-height: 24px;
+	color: #EAEAEA;
+	text-align: left;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+/* Test post
+
+.post1 {
+	background-color: #fff;
+	margin-bottom: 30px;
+	-moz-box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+	-webkit-box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+	box-shadow:0px 2px 6px 0px rgba(119, 119, 119, 0.85);
+}
+
+
+.post1 h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+	line-height: 20px;
+}
+
+.post1 h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+	line-height: 20px;
+}
+
+*/
+
+
+.space {
+	padding: 20px;
+}
