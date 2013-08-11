@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<title>LYL | Right Now</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<!-- Test mise en place Lesscss -->
+	<link rel="stylesheet/less" type="text/css" href="css/bootswatch.less">
+	<link rel="stylesheet/less" type="text/css" href="css/variables.less">
+	<!-- Custom include -->
+	<link href="css/main.css" rel="stylesheet">
+	<!-- mise en place Lesscss.js a mettre en dessous des feuilles de style -->	
+	<script src="less.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div class="modal hide scrollspy-example" data-spy="scroll" id="connexion">
+			<div class="modal-header"> 
+				<h3>Inscription/Connexion LYL Event </h3>
+			</div>
+			<div class="modal-body">
+				<p>Utilisez votre compte facebook, twitter ou votre adresse mail pour vous conneceter <br/>
+				Vous n'avez pas encore de compte ? :<a href="inscription.html" >Join Us</a><p>
+			</div>
+			<div class="span5">
+				<ul class="lien_reseaux">
+					<li><img src="img/fb.png" class="img-rounded"> </li>
+					<li><img src="img/twitter.png" class="img-rounded"></li>
+					<li><img src="img/gplus.png" class="img-rounded"></li>
+				</ul>
+			</div>
+			<div class="span3">
+				<form id="connex" class="form">
+					<fieldset>
+					<legend>Connexion</legend>
+						<input type="text" placeholder="email">
+					</fieldset>
+					<fieldset class="form-inline">
+						<input type="text" class="input-small" placeholder="Mot de passe">
+						<button type="submit" class="btn btn-info btn-small">Connectez-vous</button>
+						<span class="help-block"><a href="inscription.html">Mot de passe oublié</a></span>
+					</fieldset>	
+				</form>
+			</div>
+			<div class="offset5 span3">
+				<form id="inscr" class="form">
+				<fieldset>
+				<legend>Inscription </legend>
+						<input type="text" class="input-small" placeholder="Nom">
+						<input type="text" class="input-small" placeholder="Prénom">
+				</fieldset>
+				<fieldset class="form">
+						<input type="text" placeholder="email">
+						<button type="submit" class="btn btn-warning btn-small">S'inscrire sur LYL</button>
+						<label class="checkbox">
+						  <input type="checkbox"> Se souvenir de moi
+						</label>
+				</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<a class="btn btn-primary" data-toggle="modal" href="#connexion" >Se connecter</a>
+
+	
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>		
+	</body>
+</html>

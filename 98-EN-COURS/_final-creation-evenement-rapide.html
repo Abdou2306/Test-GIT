@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>LYL | Event</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Bootstrap -->
+			<link href="css/bootstrap.min.css" rel="stylesheet">
+			<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+			<!-- Test mise en place Lesscss -->
+			<link rel="stylesheet/less" type="text/css" href="css/bootswatch.less">
+			<link rel="stylesheet/less" type="text/css" href="css/variables.less">
+			<!-- Custom include -->
+			<link href="css/main.css" rel="stylesheet">
+			<!-- mise en place Lesscss.js a mettre en dessous des feuilles de style -->	
+			<script src="less.js" type="text/javascript"></script>
+	</head>
+<body>
+<div class="topspace"></div>
+
+
+<div class="container-fluid container-small">
+
+<h4> Création rapide d'un évènement</h4>
+<hr>
+
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="row">
+			<!-- COLONNE GAUCHE -->
+				<div class="span6">
+					<!-- Titre + description -->
+					<div class="post space">
+						<input class="input-block-level" type="text" placeholder="Titre" required="">
+						<input class="input-block-level" type="text" placeholder="Description (facultatif)">
+					</div>
+					<div class="post space">
+						<!-- Saisie heure + sondage -->
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#heure-date" data-toggle="tab">Saisie de l'heure et de la date</a></li>
+							<li><a href="#heure-date-sondage" data-toggle="tab">Réaliser un sondage</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="heure-date">
+								<div class="controls controls-row">
+									<input id="bref" name="bref" type="text" placeholder="Date" class="span4" required="">
+									<input id="bref" name="bref" type="text" placeholder="Heure" class="span2" required="">
+									 + Ajouter une heure de fin
+								</div>
+							</div>
+							<div class="tab-pane" id="heure-date-sondage">
+							<p>Réaliser un sondage</p>
+							</div>
+						</div>
+					</div>
+					<div class="post space">
+						<!-- Saisie du Lieu -->
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#lieu" data-toggle="tab">Saisie le lieu</a></li>
+							<li><a href="#lieu-sondage" data-toggle="tab">Réaliser un sondage</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="lieu">
+								<div class="controls controls-row">
+									<input class="input-block-level" type="text" placeholder="Lieu (facultatif)">
+									<hr>
+								</div>
+							</div>
+							<div class="tab-pane" id="lieu-sondage">				
+								<p>Réaliser un sondage</p>
+										Saisir une ou plusieurs dates :
+							<hr>
+							</div>												
+						</div>
+					</div>
+				</div>
+				<!-- COLONNE Droite -->
+				<div class="span6">
+					<div class="post">
+						<img src="img/1.jpg" style="width:100%" alt="evenement"></img>
+						<div class="btn-group" data-toggle="buttons-radio">
+							<button type="button" class="btn btn-primary"><i class="icon-chevron-left"></i></button>
+							<button class="btn btn-primary" data-toggle="modal" href="#modif-theme" ><i class="icon-edit"></i>  Modifier le theme</button>
+							<button type="button" class="btn btn-primary"><i class="icon-chevron-right"></i></button>
+						</div>
+					</div>
+					<div class="post space">
+						<!-- Invitation-->
+							<button class="btn btn-large btn-block btn-primary" data-toggle="modal" href="#invitation" type="button">Inviter des amis</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+		<!-- Debut fonctionnalité modification photo evenement-->
+		<div class="modal-event-modif hide" id="modif-theme">
+			<div class="modal-close"> <a class="btn btn-info" data-dismiss="modal">X</a></div>	
+			<div class="modal-event-body">
+				<div class="row-fluid post">
+				<h4>Selectionner une photo</h4>
+				<hr>
+					<div class="row-fluid">
+						<div class="span12">
+							<!-- columns menu selection de photos -->	
+							<div class="tabbable tabs-left">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#l" data-toggle="tab">Concerts</a></li>
+									<li class=""><a href="#2" data-toggle="tab">Soirée entre amis</a></li>
+									<li class=""><a href="#3" data-toggle="tab">Sport</a></li>
+									<li class=""><a href="#4" data-toggle="tab">voyage</a></li>
+									<li class=""><a href="#5" data-toggle="tab">Autre</a></li>
+									<li class=""><a href="#6" data-toggle="tab">Vos photos</a></li>
+									<hr>
+									<li class=""><a href="#7" data-toggle="tab">Importer</a></li>
+								</ul>
+								<div data-spy="scroll" data-target="#tab" data-offset="50" class="scrollspy">
+									<div class="tab-content" style="max-height:600px;">
+										<div class="tab-pane active" id="l">
+											<img src="img/3.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/2.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/3.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/2.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="2">
+											<img src="img/1.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/4.jpg" style="width:60%;" alt="evenement">													
+										</div>
+										<div class="tab-pane" id="3">
+											<img src="img/3.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="4">
+											<img src="img/1.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="5">
+											<img src="img/2.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="6">
+											<img src="img/4.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="7">
+											<form class="form-horizontal">
+												<!-- File Button --> 
+												<div class="control-group">
+												  <div class="controls">
+													<input id="upload-photo" name="upload-photo" class="input-file" type="file">
+												  </div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<button class="btn btn-success pull-right" type="button">Valider</button>
+							<button class="btn pull-right" type="button" data-dismiss="modal">Annuler</button>
+						</div>
+					</div>	
+				</div>			
+			</div>			
+		</div>
+<!-- fin fonctionnalité modification photo evenement-->
+
+
+<!-- Debut modal invitation -->
+		<div class="modal-event-modif hide" id="invitation">
+			<div class="modal-close"> <a class="btn btn-info" data-dismiss="modal">X</a></div>	
+			<div class="modal-event-body">
+				<div class="row-fluid post">
+				<h4>Inviter des amis</h4>
+				<hr>
+					<div class="row-fluid">
+						<div class="span12">
+							<!-- columns menu selection de photos -->	
+							<div class="tabbable tabs-left">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#l" data-toggle="tab">Mes amis</a></li>
+									<li class=""><a href="#2" data-toggle="tab">Via mes réseaux </a></li>
+									<li class=""><a href="#3" data-toggle="tab">Par mail</a></li>
+								</ul>
+								<div data-spy="scroll" data-target="#tab" data-offset="50" class="scrollspy">
+									<div class="tab-content" style="max-height:600px;">
+										<div class="tab-pane active" id="l">
+											<div class="row-fluid">
+												<div class="span3 post">
+													<img src="img/user1.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												<div class="span3 post">
+													<img src="img/user2.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												<div class="span3 post">
+													<img src="img/user13.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												
+											</div>
+											<div class="row-fluid">
+												<div class="span3 post">
+													<img src="img/user3.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												<div class="span3 post">
+													<img src="img/user1.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												<div class="span3 post">
+													<img src="img/user2.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span3 post">
+													<img src="img/user13.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+												<div class="span3 post">
+													<img src="img/user3.jpg" alt="">
+													<h6>PRENOM NOM</h6>
+													<p>En bref non mi porta gravida at eget metus.</p>
+													<p><i class="icon-map-marker"></i>  Ville</p>
+													<p><i class="icon-user"></i>  Nbr Ami co</p>
+													<p>
+													<button class="btn btn-small" type="button">Ajouter</button>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="2">
+											<img src="img/1.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/4.jpg" style="width:60%;" alt="evenement">													
+										</div>
+										<div class="tab-pane" id="3">
+											<img src="img/3.jpg" style="width:60%;" alt="evenement">
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<button class="btn btn-success pull-right" type="button">Valider</button>
+							<button class="btn pull-right" type="button" data-dismiss="modal">Annuler</button>
+						</div>
+					</div>	
+				</div>			
+			</div>			
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<br>
+	<br>
+	<br>
+</div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+ </body>
+</html>

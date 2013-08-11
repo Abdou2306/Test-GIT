@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>LYL | Event</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Bootstrap -->
+			<link href="css/bootstrap.min.css" rel="stylesheet">
+			<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+			<!-- Test mise en place Lesscss -->
+			<link rel="stylesheet/less" type="text/css" href="css/bootswatch.less">
+			<link rel="stylesheet/less" type="text/css" href="css/variables.less">
+			<!-- Custom include -->
+			<link href="css/main.css" rel="stylesheet">
+			<!-- mise en place Lesscss.js a mettre en dessous des feuilles de style -->	
+			<script src="less.js" type="text/javascript"></script>
+	</head>
+<body>
+<div class="topspace"></div>
+
+
+<div class="container-fluid container-small post">
+
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Tabulation  ------------------------------------->
+<!------------------------------------------------------------------------------------------->
+
+
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab"><h5>Informations Générales</h5></a></li>
+					<li><a href="#tab2" data-toggle="tab"><h5>Histoire</h5></a></li>
+					<li><a href="#tab3" data-toggle="tab"><h5>Formation</h5></a></li>
+					<li><a href="#tab4" data-toggle="tab"><h5>Parcours professionel</h5></a></li>
+					<li><a href="#tab5" data-toggle="tab"><h5>Centre d'intérêts</h5></a></li>
+					<li><a href="#tab5" data-toggle="tab"><h5>Liens</h5></a></li>
+				</ul>
+				
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Tabulation  ------------------------------------->
+<!------------------------------------------------------------------------------------------->	
+
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Contenu ----------------------------------------->
+<!------------------------------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Information générales -------------------------------------->
+<!------------------------------------------------------------------------------------------->
+
+	
+<div class="tab-content">
+	<div class="tab-pane active" id="tab1">
+		<!-- Block photo évènement-->
+		<div class="row-fluid">
+
+						<div class="input-prepend">
+							<span class="add-on">@</span>
+							<input class="span6" id="prependedInput" type="text" placeholder="Username">
+						</div>
+					<hr>Sexe  
+						<select>
+							<option>Homme</option>
+							<option>Femme</option>
+						</select>
+						
+						<select class="pull-right">
+							<option>Public</option>
+							<option>Amis uniquement</option>
+							<option>Moi uniquements</option>
+						</select>
+					<hr>Age
+						<input class="input-mini" type="text" placeholder="Jour">
+						<select>
+							<option>Janvier</option>
+							<option>Fevrier</option>
+							<option>Mars</option>
+							<option>Avril</option>
+							<option>Mai</option>
+							<option>Juin</option>
+							<option>Juillet</option>
+							<option>Aout</option>
+							<option>Septembre</option>
+							<option>Octobre</option>
+							<option>Novembre</option>
+							<option>Decembre</option>
+						</select>						
+						<input class="input-mini" type="text" placeholder="Année">
+						<select class="pull-right">
+							<option>Public</option>
+							<option>Amis uniquement</option>
+							<option>Moi uniquements</option>
+						</select>
+					<hr>Statut
+						<select>
+							<option>Célibataire</option>
+							<option>Marié</option>
+							<option>Fiancé</option>
+							<option>En couple</option>							
+						</select>
+						<select class="pull-right">
+							<option>Public</option>
+							<option>Amis uniquement</option>
+							<option>Moi uniquements</option>
+						</select>						
+					<hr>Ville actuel
+						<input class="input-large" type="text" placeholder="Ville">
+						<select class="pull-right">
+							<option>Public</option>
+							<option>Amis uniquement</option>
+							<option>Moi uniquements</option>
+						</select>						
+					<hr>	
+		</div>
+		<button class="btn btn-success pull-right" type="button" href="">Valider</button>
+		<button class="btn pull-right" type="button" href="">Annuler</button>
+	</div>
+					
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Fin Titre etc ------------------------------------>
+<!------------------------------------------------------------------------------------------->		
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Histoire ------------------------------->
+<!------------------------------------------------------------------------------------------->		
+					
+					
+<div class="tab-pane" id="tab2">
+	
+		En bref <input class="span5" type="text" placeholder="En bref">
+		<select class="pull-right span2">
+			<option>Public</option>
+			<option>Amis uniquement</option>
+			<option>Moi uniquements</option>
+		</select>			
+	<hr>Description 
+			<select class="pull-right span2">
+			<option>Public</option>
+			<option>Amis uniquement</option>
+			<option>Moi uniquements</option>
+		</select>
+		
+		<textarea class="input-block-level" rows="9"></textarea>
+	<hr>
+	
+	<button class="btn btn-success pull-right" type="button" href="">Valider</button>
+	<button class="btn pull-right" type="button" href="">Annuler</button>
+	
+</div>
+					
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Fin description ------------------------------->
+<!------------------------------------------------------------------------------------------->						
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Debut block formation------------------------------->
+<!------------------------------------------------------------------------------------------->						
+					
+<div class="tab-pane" id="tab3">
+
+	<input class="input-large" type="text" placeholder="Etablissement">
+	<input class="input-small" type="text" placeholder="Année">
+	<input class="input-small" type="text" placeholder="Année">
+	<input id="optionsCheckbox" type="checkbox" value="option1">  Actuellement</input>
+		<select class="pull-right span2">
+			<option>Public</option>
+			<option>Amis uniquement</option>
+			<option>Moi uniquements</option>
+		</select>
+	<textarea class="input-block-level" rows="7" placeholder="Description"></textarea>
+	<hr>
+		<select class="pull-right span2">
+			<option>Public</option>
+			<option>Amis uniquement</option>
+			<option>Moi uniquements</option>
+		</select>
+	<input class="input-large" type="text" placeholder="Etablissement">
+	<input class="input-small" type="text" placeholder="Année">
+	<input class="input-small" type="text" placeholder="Année">
+	<input id="optionsCheckbox" type="checkbox" value="option1">  Actuellement</input>
+
+	<textarea class="input-block-level" rows="7" placeholder="Description"></textarea>
+	<hr>
+
+	<button class="btn btn-success pull-right" type="button" href="">Valider</button>
+	<button class="btn pull-right" type="button" href="">Annuler</button>	
+	
+</div>
+					
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Fin heure / date ------------------------------->
+<!------------------------------------------------------------------------------------------->					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Entreprise ------------------------------------>
+<!------------------------------------------------------------------------------------------->
+					
+<div class="tab-pane" id="tab4">
+
+	
+	<input class="input-large" type="text" placeholder="Entreprise">
+	<input class="input-small" type="text" placeholder="Année">
+	<input class="input-small" type="text" placeholder="Année">
+	<input id="optionsCheckbox" type="checkbox" value="option1">  Actuellement</input>
+		<select class="pull-right span2">
+			<option>Public</option>
+			<option>Amis uniquement</option>
+			<option>Moi uniquements</option>
+		</select>
+	<textarea class="input-block-level" rows="7" placeholder="Description"></textarea>
+	<hr>
+		<select class="pull-right span2">
+			<option>Public</option>
+			<option>Amis uniquement</option>
+			<option>Moi uniquements</option>
+		</select>
+	<input class="input-large" type="text" placeholder="Entreprise">
+	<input class="input-small" type="text" placeholder="Année">
+	<input class="input-small" type="text" placeholder="Année">
+	<input id="optionsCheckbox" type="checkbox" value="option1">  Actuellement</input>
+
+	<textarea class="input-block-level" rows="7" placeholder="Description"></textarea>
+	<hr>
+
+	<button class="btn btn-success pull-right" type="button" href="">Valider</button>
+	<button class="btn pull-right" type="button" href="">Annuler</button>			
+	
+</div>
+					
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Fin Entreprise ------------------------------------>
+<!------------------------------------------------------------------------------------------->						
+
+
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- centres d'intérêts ------------------------------------>
+<!------------------------------------------------------------------------------------------->						
+					
+
+					
+<div class="tab-pane" id="tab5">
+
+		<input class="span4" type="text" placeholder="Titre">
+		<input class="span4" type="text" placeholder="Lien">
+		
+		<select class="pull-right span2">
+			<option>Public</option>
+			<option>Amis uniquement</option>
+			<option>Moi uniquements</option>
+		</select>			
+	<hr>
+	
+		<input class="span4" type="text" placeholder="Titre">
+		<input class="span4" type="text" placeholder="Lien">
+		
+		<select class="pull-right span2">
+			<option>Public</option>
+			<option>Amis uniquement</option>
+			<option>Moi uniquements</option>
+		</select>
+
+
+
+		
+</div>					
+
+	
+
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Fin centres d'intérêts ------------------------------------>
+<!------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Lien ------------------------------------>
+<!------------------------------------------------------------------------------------------->						
+					
+
+					
+<div class="tab-pane" id="tab6">
+
+		<input class="span4" type="text" placeholder="Titre">
+		<input class="span4" type="text" placeholder="Lien">
+		
+		<select class="pull-right span2">
+			<option>Public</option>
+			<option>Amis uniquement</option>
+			<option>Moi uniquements</option>
+		</select>			
+	<hr>
+	
+		<input class="span4" type="text" placeholder="Titre">
+		<input class="span4" type="text" placeholder="Lien">
+		
+		<select class="pull-right span2">
+			<option>Public</option>
+			<option>Amis uniquement</option>
+			<option>Moi uniquements</option>
+		</select>
+
+
+
+		
+</div>					
+
+	
+
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Fin lien ------------------------------------>
+<!------------------------------------------------------------------------------------------->	
+	
+	
+<!------------------------------------------------------------------------------------------->
+<!----------------------------------------- Fin des Contenus ----------------------------------------->
+<!------------------------------------------------------------------------------------------->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Debut fonctionnalité modification photo evenement-->
+		<div class="modal-event-modif hide" id="modif-theme">
+			<div class="modal-close"> <a class="btn btn-info" data-dismiss="modal">X</a></div>	
+			<div class="modal-event-body">
+				<div class="row-fluid post">
+				<h4>Selectionner une photo</h4>
+				<hr>
+					<div class="row-fluid">
+						<div class="span12">
+							<!-- columns menu selection de photos -->	
+							<div class="tabbable tabs-left">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#l" data-toggle="tab">Concerts</a></li>
+									<li class=""><a href="#2" data-toggle="tab">Soirée entre amis</a></li>
+									<li class=""><a href="#3" data-toggle="tab">Sport</a></li>
+									<li class=""><a href="#4" data-toggle="tab">voyage</a></li>
+									<li class=""><a href="#5" data-toggle="tab">Autre</a></li>
+									<li class=""><a href="#6" data-toggle="tab">Vos photos</a></li>
+									<hr>
+									<li class=""><a href="#7" data-toggle="tab">Importer</a></li>
+								</ul>
+								<div data-spy="scroll" data-target="#tab" data-offset="50" class="scrollspy">
+									<div class="tab-content" style="max-height:600px;">
+										<div class="tab-pane active" id="l">
+											<img src="img/3.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/2.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/3.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/2.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="2">
+											<img src="img/1.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/4.jpg" style="width:60%;" alt="evenement">													
+										</div>
+										<div class="tab-pane" id="3">
+											<img src="img/3.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="4">
+											<img src="img/1.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="5">
+											<img src="img/2.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="6">
+											<img src="img/4.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="7">
+											<form class="form-horizontal">
+												<!-- File Button --> 
+												<div class="control-group">
+												  <div class="controls">
+													<input id="upload-photo" name="upload-photo" class="input-file" type="file">
+												  </div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<button class="btn btn-success pull-right" type="button">Valider</button>
+							<button class="btn pull-right" type="button" data-dismiss="modal">Annuler</button>
+						</div>
+					</div>	
+				</div>			
+			</div>			
+		</div>
+<!-- fin fonctionnalité modification photo evenement-->
+	<br>
+	<br>
+	<br>
+</div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+ </body>
+</html>

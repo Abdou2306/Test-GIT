@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>LYL | Event</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Bootstrap -->
+			<link href="css/bootstrap.min.css" rel="stylesheet">
+			<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+			<!-- Test mise en place Lesscss -->
+			<link rel="stylesheet/less" type="text/css" href="css/bootswatch.less">
+			<link rel="stylesheet/less" type="text/css" href="css/variables.less">
+			<!-- Custom include -->
+			<link href="css/main.css" rel="stylesheet">
+			<!-- mise en place Lesscss.js a mettre en dessous des feuilles de style -->	
+			<script src="less.js" type="text/javascript"></script>
+	</head>
+<body>
+	<div class="topspace"></div>
+<div class="container-fluid container-small">
+<!-- Block photo évènement-->
+		<div class="span12 row-fluid post">
+			<h4>Choix de la photo</h4>
+			<hr>
+			<div class="row-fluid">
+				<div class="span6">
+					<img src="img/1.jpg" style="width:100%" alt="evenement">
+					<div class="btn-group" data-toggle="buttons-radio">
+						<button type="button" class="btn btn-primary"><i class="icon-chevron-left"></i></button>
+						<button class="btn btn-primary" data-toggle="modal" href="#modif-theme" ><i class="icon-edit"></i>  Modifier le theme</button>
+						<button type="button" class="btn btn-primary"><i class="icon-chevron-right"></i></button>
+					</div>
+				</div>
+				<div class="span5">
+					<form>
+						<fieldset>
+							<div class="row-fluid">
+								<div class="span8">
+									<!-- Text input-->
+									<div class="control-group">
+										<input id="titre" name="titre" type="text" placeholder="Titre" class="input-xlarge" required="">
+									</div>
+								</div>
+								<div class="span4">	
+									<div class="control-group">
+										<!-- test ligne form -->
+											<select id="type" name="type" class="input-large">
+												<option>Privé</option>
+												<option>Public</option>
+												<option>Secret</option>
+											</select>
+									</div>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="control-group">
+									<input id="bref" name="bref" type="text" placeholder="Description en quelques mots" class="input-xlarge" required="">
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="control-group">
+									<textarea id="Description" name="Description" rows="5">Description (facultatif)</textarea>
+								</div>
+							</div>	
+						</fieldset>
+					</form>					
+				</div>
+			</div>
+		</div>
+<!-- Debut fonctionnalité modification photo evenement-->
+		<div class="modal-event-modif hide" id="modif-theme">
+			<div class="modal-close"> <a class="btn btn-info" data-dismiss="modal">X</a></div>	
+			<div class="modal-event-body">
+				<div class="row-fluid post">
+				<h4>Selectionner une photo</h4>
+				<hr>
+					<div class="row-fluid">
+						<div class="span12">
+							<!-- columns menu selection de photos -->	
+							<div class="tabbable tabs-left">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#l" data-toggle="tab">Concerts</a></li>
+									<li class=""><a href="#2" data-toggle="tab">Soirée entre amis</a></li>
+									<li class=""><a href="#3" data-toggle="tab">Sport</a></li>
+									<li class=""><a href="#4" data-toggle="tab">voyage</a></li>
+									<li class=""><a href="#5" data-toggle="tab">Autre</a></li>
+									<li class=""><a href="#6" data-toggle="tab">Vos photos</a></li>
+									<hr>
+									<li class=""><a href="#7" data-toggle="tab">Importer</a></li>
+								</ul>
+								<div data-spy="scroll" data-target="#tab" data-offset="50" class="scrollspy">
+									<div class="tab-content" style="max-height:600px;">
+										<div class="tab-pane active" id="l">
+											<img src="img/3.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/2.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/3.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/2.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="2">
+											<img src="img/1.jpg" style="width:60%;" alt="evenement">
+											<hr>
+											<img src="img/4.jpg" style="width:60%;" alt="evenement">													
+										</div>
+										<div class="tab-pane" id="3">
+											<img src="img/3.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="4">
+											<img src="img/1.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="5">
+											<img src="img/2.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="6">
+											<img src="img/4.jpg" style="width:60%;" alt="evenement">
+										</div>
+										<div class="tab-pane" id="7">
+											<form class="form-horizontal">
+												<!-- File Button --> 
+												<div class="control-group">
+												  <div class="controls">
+													<input id="upload-photo" name="upload-photo" class="input-file" type="file">
+												  </div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<button class="btn btn-info pull-right" type="button">Valider</button>
+							<button class="btn pull-right" type="button" data-dismiss="modal">Annuler</button>
+						</div>
+					</div>	
+				</div>			
+			</div>			
+		</div>
+<!-- fin fonctionnalité modification photo evenement-->
+	<br>
+	<br>
+	<br>
+</div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+ </body>
+</html>
